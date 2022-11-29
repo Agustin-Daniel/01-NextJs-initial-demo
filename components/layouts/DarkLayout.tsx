@@ -1,4 +1,7 @@
-export const DarkLayout = ({ children }) => {
+import { FC, PropsWithChildren } from 'react';
+
+
+export const DarkLayout: FC <PropsWithChildren>= ({ children }) => {
 	return (
 		<div
 			style={{
@@ -9,7 +12,7 @@ export const DarkLayout = ({ children }) => {
 		>
 			<h3>Dark-Layout</h3>
 			<div>
-                {children}
+                { children }
             </div>
 		</div>
 	);
